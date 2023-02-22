@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+  install:
+    nodejs: 14
+  pre_build:
+    commands:
+      - npm install
+  build:
+    commands:
+      - npm build
+      - npm test
+  artifacts:
+    - src/**/*
+    - package.json
