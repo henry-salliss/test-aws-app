@@ -7,19 +7,20 @@ frontend:
 
     pre_build:
       commands:
-        - npm run build
+        - npm install
 
     build:
       commands:
         - echo Build started on `date`
         - npm install
         - npm run build
+        - npm run copy
 
     post_build:
       commands:
         - echo Build completed on `date`
 
   artifacts:
-    baseDirectory: /dist/
+    baseDirectory: /build/
     files:
       - '**/*'
