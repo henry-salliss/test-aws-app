@@ -13,3 +13,6 @@ artifacts:
   files:
     - src/**/*
     - package.json
+cache:
+  paths:
+    - node_modules/**/*
