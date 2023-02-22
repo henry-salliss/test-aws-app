@@ -21,7 +21,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "copy": "cd src && cpx \"**/*\" ../build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject",
     "test-ci": "karma start karma.conf.js --single-run --browsers ChromeHeadlessNoSandbox"
   },
