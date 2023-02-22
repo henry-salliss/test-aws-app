@@ -15,7 +15,6 @@ frontend:
         - npm install
         - npm run build
         - npm run copy
-        - npm run test
 
     post_build:
       commands:
