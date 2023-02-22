@@ -9,8 +9,8 @@ phases:
     commands:
       - npm build
       - npm test
-  artifacts:
-    baseDirectory: /dist/
-    files:
-      - src/**/*
-      - package.json
+artifacts:
+  baseDirectory: /dist/
+  files:
+    - src/**/*
+    - package.json
