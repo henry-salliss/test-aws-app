@@ -10,5 +10,7 @@ phases:
       - npm build
       - npm test
   artifacts:
-    - src/**/*
-    - package.json
+    baseDirectory: /dist/
+    files:
+      - src/**/*
+      - package.json
